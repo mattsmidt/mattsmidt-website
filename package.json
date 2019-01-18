@@ -29,10 +29,12 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "postinstall": "^0.4.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-under-construction": "^0.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -40,6 +42,8 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   }
