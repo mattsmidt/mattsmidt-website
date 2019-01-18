@@ -16,7 +16,9 @@ header {
   float: right;
 }
 
-root > [data-reactroot] { height: 100% }
+.UnderConstruction, .UnderConstruction-overlay {
+  height: 100vh;
+}
 
 footer {
   display: block;
