@@ -35,10 +35,14 @@
     "nodemon": "^1.18.9",
     "postinstall": "^0.4.2",
     "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
+    "react-pdf": "^4.0.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-under-construction": "^0.3.0",
+    "semantic-ui": "^2.4.2",
+    "semantic-ui-react": "^0.84.0",
     "webpack": "^4.28.4"
   },
   "devDependencies": {
@@ -49,6 +53,7 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
     "style-loader": "^0.23.1",
     "webpack-cli": "^3.2.1"
   },

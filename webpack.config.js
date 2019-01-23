@@ -15,6 +15,10 @@ module.exports = {
   module : {
     rules : [
       {
+        test: /\.pdf$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
       },

@@ -13,4 +13,5 @@
 # [START app_yaml]
 env: flex
 runtime: nodejs
+skip_files: yarn.lock
 # [END app_yaml]
