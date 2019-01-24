@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import profilePhoto from '../images/IMG_9154.jpg';
 import resumePhoto from '../images/resumeImg.jpg';
 import resume from '../images/MATT SMIDT - Resume.pdf';
@@ -20,13 +21,15 @@ class HomePage extends Component {
     return (
       <body id="outerSpace">
         <section id="menu">
-          <a class="home item smoothScroll selected-item" href="#home">Home</a>
-          <a class="item smoothScroll" href="#me">About</a>
-          <a class="item smoothScroll" href="#coop">Co-op Experiences</a>
-          <a class="item smoothScroll" href="#resume">Resume</a>
-          <a class="item smoothScroll" href="#contact">Contact</a>
+          <a class="home item smoothScroll selected-item" href="#scrollHome">Home</a>
+          <a class="item smoothScroll" href="#scrollMe">About</a>
+          <a class="item smoothScroll" href="#scrollCoop">Co-op Experiences</a>
+          <a class="item smoothScroll" href="#scrollResume">Resume</a>
+          <a class="item smoothScroll" href="#scrollContact">Contact</a>
         </section>
+
         <section id="home">
+          <div><ScrollableAnchor id={'scrollHome'}><div></div></ScrollableAnchor></div>
           <div class="sky">
             <div class="stars"></div>
             <div class="stars1"></div>
@@ -45,13 +48,15 @@ class HomePage extends Component {
           </div>
           <div id="opening">
             <article class="go-down">
-              <a class="smoothScroll" id="learnAboutMe" href="#me">
+              <a class="smoothScroll" id="learnAboutMe" href="#scrollMe">
                 <p class="scroll-description">Learn more about me</p>
                 <i class="angle double down icon"></i>
               </a>
             </article>
           </div>
         </section>
+
+        <div><ScrollableAnchor id={'scrollMe'}><div></div></ScrollableAnchor></div>
         <section id="me">
           <div id="photoDiv">
             <img id="profilePhoto" src={profilePhoto} alt="profilePhoto"/>
@@ -71,6 +76,8 @@ class HomePage extends Component {
             </div>
           </div>
         </section>
+
+        <div><ScrollableAnchor id={'scrollCoop'}><div></div></ScrollableAnchor></div>
         <section id="coop">
           <h1 class="section-title">Co-op Experiences</h1>
           <article class="coopArticle">
@@ -156,6 +163,8 @@ class HomePage extends Component {
             </div>
           </article>
         </section>
+
+        <div><ScrollableAnchor id={'scrollResume'}><div></div></ScrollableAnchor></div>
         <section id="resume">
           <div class="resumeDesc">
             <h1 class="section-title">Resume</h1>
@@ -170,6 +179,8 @@ class HomePage extends Component {
             </a>
           </div>
         </section>
+
+        <div><ScrollableAnchor id={'scrollContact'}><div></div></ScrollableAnchor></div>
         <section id="contact">
           <h1 class="section-title">Contact</h1>
           <div id="contactLinks">

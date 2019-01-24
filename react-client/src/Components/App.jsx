@@ -4,6 +4,7 @@ import { browserHistory } from 'react-router';
 import HomePage from './HomePage';
 import NavBar from './HeaderComponent/NavBar';
 import Footer from './FooterComponent/Footer';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 class App extends Component {
   render() {
