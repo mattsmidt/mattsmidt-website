@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import profilePhoto from '../images/IMG_9154.jpg';
+import profilePhoto from '../images/DSC_3385-2.jpg';
 import resumePhoto from '../images/resumeImg.jpg';
 import resume from '../images/MATT SMIDT - Resume.pdf';
 import aspNetMVC from '../images/asp-net-mvc.jpg';
@@ -15,6 +15,12 @@ import javaIcon from '../images/java.jpg';
 import apache from '../images/apache.jpg';
 import spring from '../images/spring.jpg';
 import plsql from '../images/plsql.jpg';
+import reactNative from '../images/react-native.jpg';
+import javaJDK from '../images/Java-JDK.jpg';
+import androidStudio from '../images/android-studio.jpg';
+import github from '../images/github.jpg';
+import hsqldb from '../images/hsqldb.jpg';
+import junit from '../images/junit.jpg';
 
 class HomePage extends Component {
   render() {
@@ -23,6 +29,7 @@ class HomePage extends Component {
         <section id="menu">
           <a class="home item smoothScroll selected-item" href="#scrollHome">Home</a>
           <a class="item smoothScroll" href="#scrollMe">About</a>
+          <a class="item smoothScroll" href="#scrollProjects">Projects</a>
           <a class="item smoothScroll" href="#scrollCoop">Co-op Experiences</a>
           <a class="item smoothScroll" href="#scrollResume">Resume</a>
           <a class="item smoothScroll" href="#scrollContact">Contact</a>
@@ -75,6 +82,54 @@ class HomePage extends Component {
               </p>
             </div>
           </div>
+        </section>
+
+        <div><ScrollableAnchor id={'scrollProjects'}><div></div></ScrollableAnchor></div>
+        <section id="coop">
+          <h1 class="section-title">Projects</h1>
+          <article class="coopArticle">
+            <div class="coopDesc">
+              <h2>Mass Personal SMS</h2>
+              <p>
+                A mobile app designed to send personalized and individualized texts to multiple contacts at once.
+              </p>
+              <ul>
+                <li>Built using React Native.</li>
+              </ul>
+              <p></p>
+            </div>
+            <div class="technology">
+              <h3>Technologies Used</h3>
+              <p></p>
+              <div class="techStack">
+                <img class="techLogo" src={reactNative} alt="React-Native"/>
+              </div>
+            </div>
+          </article>
+          <div class="coopDivider"></div>
+          <article class="coopArticle">
+            <div class="coopDesc">
+              <h2>Muscle Up - Workout Management and Tracking System</h2>
+              <p>
+                An android application designed to assist users in improving their physical health, by allowing them to view, schedule, and track their workouts.
+              </p>
+              <ul>
+                <li>Developed for Software Engineering I as a group project using Java JDK, Android Studio, GitHub, HSQLDB, JUnit testing framework.</li>
+              </ul>
+              <p></p>
+            </div>
+            <div class="technology">
+              <h3>Technologies Used</h3>
+              <p></p>
+              <div class="techStack">
+                <img class="techLogo" src={javaJDK} alt="Java JDK"/>
+                <img class="techLogo" src={androidStudio} alt="Android Studio"/>
+                <img class="techLogo" src={github} alt="GitHub"/>
+                <img class="techLogo" src={hsqldb} alt="HSQLDB"/>
+                <img class="techLogo" src={junit} alt="junit"/>
+              </div>
+            </div>
+          </article>
         </section>
 
         <div><ScrollableAnchor id={'scrollCoop'}><div></div></ScrollableAnchor></div>
