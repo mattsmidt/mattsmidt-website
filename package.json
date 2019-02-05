@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/mattsmidt/mattsmidt-website/issues"
   },
-  "homepage": "https://github.com/mattsmidt/mattsmidt-website#readme",
+  "homepage": "https://mattsmidt.github.io/mattsmidt-website/",
   "engines": {
     "node": ">=8"
   },
